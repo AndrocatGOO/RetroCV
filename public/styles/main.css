@@ -8,11 +8,11 @@
 
 @font-face {
   font-family: 'windows_command_prompt';
-  src: url(./../public/font/MP16OSF.ttf) format('truetype'); /* Corrección del formato */
+  src: url(./../font/MP16OSF.ttf) format('truetype'); /* Corrección del formato */
 }
 @font-face {
   font-family: 'windows_command_prompt_logos';
-  src: url(./../public/font/MP16TO1.ttf) format('truetype'); /* Corrección del formato */
+  src: url(./../font/MP16TO1.ttf) format('truetype'); /* Corrección del formato */
 }
 
 * {
@@ -24,7 +24,7 @@ body{
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  background-image: url(./../public/imgs/81340844a99a35cc7993166cbd9b5866.gif);
+  background-image: url(./../imgs/81340844a99a35cc7993166cbd9b5866.gif);
   background-position: center;
   background-size:cover;
   background-repeat: no-repeat;
