@@ -24,7 +24,7 @@ body{
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  background-image: url(/public/imgs/81340844a99a35cc7993166cbd9b5866.gif);
+  background-image: url(./public/imgs/81340844a99a35cc7993166cbd9b5866.gif);
   background-position: center;
   background-size:cover;
   background-repeat: no-repeat;
