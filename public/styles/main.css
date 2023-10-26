@@ -8,11 +8,11 @@
 
 @font-face {
   font-family: 'windows_command_prompt';
-  src: url(/public/font/MP16OSF.ttf) format('truetype'); /* Corrección del formato */
+  src: url(./public/font/MP16OSF.ttf) format('truetype'); /* Corrección del formato */
 }
 @font-face {
   font-family: 'windows_command_prompt_logos';
-  src: url(/public/font/MP16TO1.ttf) format('truetype'); /* Corrección del formato */
+  src: url(./public/font/MP16TO1.ttf) format('truetype'); /* Corrección del formato */
 }
 
 * {
