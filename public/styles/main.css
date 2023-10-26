@@ -1,0 +1,154 @@
+/* Definición de una variable */
+:root {
+  --windows-colors: #cfdbf2;
+  --border-color:#4a2062;
+  --taskbarColor:#cfdbf2;
+  --resoluition: 0.15625vh;
+}
+
+@font-face {
+  font-family: 'windows_command_prompt';
+  src: url(/public/font/MP16OSF.ttf) format('truetype'); /* Corrección del formato */
+}
+@font-face {
+  font-family: 'windows_command_prompt_logos';
+  src: url(/public/font/MP16TO1.ttf) format('truetype'); /* Corrección del formato */
+}
+
+* {
+  font-family: 'windows_command_prompt', sans-serif !important;
+}
+
+body{
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url(/public/imgs/81340844a99a35cc7993166cbd9b5866.gif);
+  background-position: center;
+  background-size:cover;
+  background-repeat: no-repeat;
+  font-family: 'windows_command_prompt', sans-serif;
+}
+
+
+.buttom{
+  border: calc(var(--resoluition) * 2)  solid var(--border-color);
+  border-bottom: calc(var(--resoluition) * 3)  solid var(--border-color);
+  border-right: calc(var(--resoluition) * 3)  solid var(--border-color);
+  
+}
+
+
+
+
+
+.windowsTop{
+  display: flex;
+  width: 100vw;
+  height: calc(var(--resoluition) * 620) ;
+  position: absolute;
+  top: 0;
+}
+.window-test{
+  display: flex;
+  position: absolute;
+  width: calc(var(--resoluition) * 140);
+  height: calc(var(--resoluition) * 100);
+  top:calc(var(--resoluition) * 220) ;
+  left:calc(var(--resoluition) * 420) ;
+  background-color: var(--windows-colors);
+  border: calc(var(--resoluition) * 2) solid var(--border-color);
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.windowHeader{
+  display: flex;
+  width: 100%;
+  height: calc(var(--resoluition) * 14);
+  border-bottom:calc(var(--resoluition) * 2) solid var(--border-color);
+  padding:0 calc(var(--resoluition) * 2) ;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.windowHeader .buttoms{
+  display: flex;
+  cursor: pointer;
+  flex-direction: row-reverse;
+  margin-right: calc(var(--resoluition) * 2);
+}
+.windowHeader .buttoms .buttom{
+
+  font-size: 12px;
+  margin: calc(var(--resoluition) * 1) calc(var(--resoluition) * 1);
+  width: calc(var(--resoluition) * 8) !important;
+  height: calc(var(--resoluition) * 8) !important;
+  text-align: center;
+}
+
+.windowcontent{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+}
+
+
+.windowcontent1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-evenly;
+  height: 70%;
+}
+
+.icon{
+  height: calc(var(--resoluition) * 32);
+    width: calc(var(--resoluition) * 32);
+}
+
+.icon img{
+  width: 100%;
+    height: auto;
+}
+
+
+.windowcontent2{
+  height:30%;
+}
+.windowcontent2 .buttom {
+
+  margin-right:calc(var(--resoluition) * 10);
+  font-size:14px;
+  padding:calc(var(--resoluition) * 2) calc(var(--resoluition) * 4);
+  cursor:pointer;
+  height:calc(var(--resoluition) * 10);
+
+}
+
+.window-test .windowcontent .windowcontent2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  
+}
+
+
+
+
+
+
+
+.taskBar{
+  display: flex;
+  width: 100vw;
+  height: calc(var(--resoluition) * 20) ;
+  background-color: var(--taskbarColor);
+  border-top: calc(var(--resoluition) * 2) solid var(--border-color);
+  position: absolute;
+  bottom: 0;
+
+}
